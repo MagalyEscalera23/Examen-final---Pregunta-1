@@ -1,0 +1,13 @@
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:80" # Asegúrate de que este puerto esté disponible
+    volumes:
+      - ./html:/usr/share/nginx/html
+    networks:
+      - nginx_network
+
+networks:
+  nginx_network:
+    driver: bridge

@@ -1,0 +1,7 @@
+mi-proyecto/
+│
+├── docker-compose.yml
+├── nginx/
+│   └── default.conf
+└── web/
+    └── index.html
